@@ -76,6 +76,8 @@ wget -O virtio.iso https://fedorapeople.org/groups/virt/virtio-win/direct-downlo
 
 mount -o loop virtio.iso winfile
 
+mkdir /mnt/sources
+
 mkdir /mnt/sources/virtio
 
 rsync -avz --progress winfile/* /mnt/sources/virtio
