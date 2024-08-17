@@ -64,7 +64,7 @@ cd /root/windisk
 
 mkdir winfile
 
-wget -O win2022.iso --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" https://go.microsoft.com/fwlink/p/?linkid=2195333
+wget -O win2022.iso --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36" "https://go.microsoft.com/fwlink/p/?LinkID=2195280&clcid=0x409&culture=en-us&country=US"
 
 mount -o loop win2022.iso winfile
 
@@ -75,8 +75,6 @@ umount winfile
 wget -O virtio.iso https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso
 
 mount -o loop virtio.iso winfile
-
-mkdir /mnt/sources
 
 mkdir /mnt/sources/virtio
 
